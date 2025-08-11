@@ -17,11 +17,11 @@ const Hero = () => {
         <div className="relative hero-scrim-16">
           <div className="container min-h-[72vh] md:min-h-[80vh] flex items-center">
             <div className="max-w-2xl py-24">
-              <h1 className="text-4xl md:text-6xl font-extrabold leading-tight text-accent text-outline">
+              <h1 className="text-4xl md:text-6xl font-extrabold leading-tight text-foreground">
                 Calentito, crocante y carioca.
               </h1>
               <p className="mt-4 text-lg md:text-xl text-foreground max-w-prose">
-                Hecho al momento, con ingredientes honestos. Coxinhas y pasabocas brasileños que invitan a bailar.
+                Hecho al momento, con ingredientes de puro sabor Colombiano. Coxinhas y pasabocas brasileños que invitan a bailar.
               </p>
               <div className="mt-8 flex items-center gap-4">
                 <Button asChild size="lg" variant="whatsapp">
