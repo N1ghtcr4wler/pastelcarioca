@@ -9,7 +9,7 @@ const Header = () => {
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center gap-3">
           <Link to="/" className="inline-flex items-center" aria-label="Pastel Carioca inicio">
-            <img src="/lovable-uploads/d11d43e2-fb65-46d9-9217-db466fb3b4b0.png" alt="Pastel Carioca logo" className="h-8 w-auto" width={128} height={48} loading="eager" decoding="async" />
+            <img src="/lovable-uploads/d11d43e2-fb65-46d9-9217-db466fb3b4b0.png" alt="Pastel Carioca logo" className="block h-14 w-auto md:h-16 shrink-0" width={128} height={48} loading="eager" decoding="async" />
           </Link>
         </div>
         <nav className="hidden md:flex items-center gap-6 text-sm">
