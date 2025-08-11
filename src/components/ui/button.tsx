@@ -18,6 +18,11 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        // CTA variants aligned to the design system tokens
+        whatsapp:
+          "bg-primary text-primary-foreground shadow-sm hover:bg-primary/95 hover:ring-2 hover:ring-accent focus-visible:ring-accent",
+        hero:
+          "bg-transparent border border-accent/30 text-foreground hover:border-accent hover:bg-accent/10",
       },
       size: {
         default: "h-10 px-4 py-2",

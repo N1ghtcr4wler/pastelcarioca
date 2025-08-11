@@ -2,12 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Diseño de marca en HSL: Copacabana Blue, Açaí Purple, Samba Green, Sun Rio Yellow, Coconut White */
 
 @layer base {
   :root {
+    /* Base (modo claro fallback) */
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
 
@@ -39,58 +38,61 @@ All colors MUST be HSL.
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Brand tokens */
+    --brand-blue: 208 86% 29%; /* #0A4D8C */
+    --brand-purple: 263 47% 35%; /* #4B2E83 */
+    --samba-green: 147 100% 31%; /* #009C3B */
+    --sun-rio-yellow: 52 100% 50%; /* #FFDF00 */
+    --coconut-white: 0 0% 100%; /* #FFFFFF */
+    --scrim: 0 0% 0%; /* neutral scrim base */
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    /* Modo oscuro por defecto: fondo Copacabana Blue con acentos Samba & Sun Rio */
+    --background: var(--brand-blue);
+    --foreground: var(--coconut-white);
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 208 70% 18%;
+    --card-foreground: var(--coconut-white);
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 208 70% 18%;
+    --popover-foreground: var(--coconut-white);
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: var(--samba-green);
+    --primary-foreground: var(--coconut-white);
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 210 20% 22%;
+    --secondary-foreground: var(--coconut-white);
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 210 20% 22%;
+    --muted-foreground: 210 8% 70%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: var(--sun-rio-yellow);
+    --accent-foreground: 222 20% 14%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: var(--coconut-white);
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 210 26% 28%;
+    --input: 210 26% 28%;
+    --ring: var(--samba-green);
+
+    --sidebar-background: 210 30% 16%;
+    --sidebar-foreground: var(--coconut-white);
+    --sidebar-primary: var(--samba-green);
+    --sidebar-primary-foreground: var(--coconut-white);
+    --sidebar-accent: 210 25% 22%;
+    --sidebar-accent-foreground: var(--coconut-white);
+    --sidebar-border: 210 25% 22%;
+    --sidebar-ring: var(--sun-rio-yellow);
   }
 }
 
@@ -100,6 +102,23 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-heading;
+  }
+}
+
+@layer utilities {
+  /* Scrims para legibilidad sobre imagen */
+  .hero-scrim-12 { background: linear-gradient(180deg, hsl(var(--scrim) / 0.12), hsl(var(--scrim) / 0.12)); }
+  .hero-scrim-16 { background: linear-gradient(180deg, hsl(var(--scrim) / 0.16), hsl(var(--scrim) / 0.16)); }
+  .hero-scrim-20 { background: linear-gradient(180deg, hsl(var(--scrim) / 0.20), hsl(var(--scrim) / 0.20)); }
+
+  /* Sutileza de textura: bokeh/grano muy suave */
+  .subtle-texture {
+    background-image: radial-gradient(hsl(var(--coconut-white) / 0.03) 1px, transparent 1px);
+    background-size: 3px 3px;
   }
 }
