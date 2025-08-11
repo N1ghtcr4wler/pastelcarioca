@@ -18,9 +18,6 @@ const Hero = () => {
                     Pedir por WhatsApp
                   </a>
                 </Button>
-                <Button asChild size="lg" variant="hero">
-                  <a href="#menu">Ver menú</a>
-                </Button>
               </div>
             </div>
           </div>
