@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 
 const WA_MAIN = "https://wa.me/573244524438?text=Hola%21%20Quiero%20Coxinhas%21";
-const WA_QUERY = "https://wa.me/573244524438?text=Consulta%20disponibilidad";
+
 
 const OrdersBlock = () => {
   return (
@@ -17,15 +17,6 @@ const OrdersBlock = () => {
               Pedir por WhatsApp
             </a>
           </Button>
-          <a
-            href={WA_QUERY}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm text-accent underline underline-offset-4 hover:opacity-90"
-            aria-label="Consulta disponibilidad por WhatsApp"
-          >
-            Consulta disponibilidad
-          </a>
         </div>
       </div>
     </section>
