@@ -20,7 +20,7 @@ const Hero = () => {
               <h1 className="text-4xl md:text-6xl font-extrabold leading-tight text-accent">
                 Calentito, crocante y carioca.
               </h1>
-              <p className="mt-4 text-lg md:text-xl text-muted-foreground max-w-prose">
+              <p className="mt-4 text-lg md:text-xl text-foreground max-w-prose">
                 Hecho al momento, con ingredientes honestos. Coxinhas y pasabocas brasileños que invitan a bailar.
               </p>
               <div className="mt-8 flex items-center gap-4">
