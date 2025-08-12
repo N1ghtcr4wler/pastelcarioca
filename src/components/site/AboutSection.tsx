@@ -4,7 +4,7 @@ const AboutSection = () => {
       <div className="container max-w-5xl">
         <h2 className="text-2xl md:text-3xl font-semibold">Sobre nosotros</h2>
         <p className="text-muted-foreground mt-2 max-w-prose">
-          Origen carioca, ritmo en la mesa. Hacemos cada pedido al momento y cuidamos que llegue perfecto a tu puerta o congelados para que los disfrutes calienticos a su proprio tiempo. Somos una empresa con alma brasileña y corazon Colombiano: Calidez casera, enfocada en snacks hechos al pedido. Combinamos autenticidad y cercanía para almuerzos rápidos, meriendas sabrosas y catering de eventos en Bogotá.
+          Origen carioca, ritmo en la mesa. Hacemos cada pedido al momento y cuidamos que llegue perfecto a tu puerta o congelados para que los disfrutes a su proprio tiempo. Somos una empresa con alma brasileña y corazon Colombiano: Calidez casera, enfocada en snacks hechos al pedido. Combinamos autenticidad y cercanía para almuerzos rápidos, meriendas sabrosas y catering de eventos en Bogotá.
         </p>
 
         <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
