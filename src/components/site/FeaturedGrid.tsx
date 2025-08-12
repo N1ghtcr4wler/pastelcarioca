@@ -27,7 +27,7 @@ const FeaturedGrid = () => {
   return <section id="destacados" className="py-16 subtle-texture">
       <div className="container">
         <h2 className="text-2xl md:text-3xl font-semibold">Antojos destacados</h2>
-        <p className="text-muted-foreground mt-2 max-w-prose">Crujiente, calientitos y listos para compartir. El ritmo carioca en cada bocado.</p>
+        <p className="text-muted-foreground mt-2 max-w-prose">Crujientes, calientitos y listos para compartir. El ritmo carioca en cada bocado.</p>
         <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {items.map(it => <article key={it.title} className="rounded-lg overflow-hidden border border-border/40 bg-card/60 hover:bg-card transition-colors">
               <div className="aspect-[4/3] overflow-hidden">
