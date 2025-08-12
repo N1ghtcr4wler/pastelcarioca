@@ -14,7 +14,7 @@ const items = [{
   alt: "Pastel brasileño frito abierto mostrando su relleno"
 }, {
   img: kibbeh,
-  title: "Kibbeh",
+  title: "Kibe",
   desc: "Croqueta crujiente con especias y limón.",
   alt: "Kibbeh crujiente con gajo de limón y perejil"
 }, {
