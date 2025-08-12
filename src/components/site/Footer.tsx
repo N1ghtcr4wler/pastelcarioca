@@ -184,7 +184,114 @@ const Footer = () => {
             </DialogContent>
           </Dialog>
 
-          <a href="#cookies" className="hover:text-accent">Cookies</a>
+          <Dialog>
+            <DialogTrigger asChild>
+              <button type="button" className="hover:text-accent">Cookies</button>
+            </DialogTrigger>
+            <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
+              <DialogHeader>
+                <DialogTitle>Política de Cookies</DialogTitle>
+                <DialogDescription>
+                  Qué son las cookies, qué tipos utilizamos y cómo gestionarlas en nuestros canales digitales.
+                </DialogDescription>
+              </DialogHeader>
+
+              <div className="space-y-6 text-foreground">
+                <p className="text-muted-foreground">
+                  Esta Política explica qué son las cookies, qué tipos utilizamos y cómo puedes gestionarlas cuando visitas
+                  nuestros sitios y canales digitales operados por Brazoom Colombia SAS ("Brazoom", "nosotros").
+                </p>
+
+                <section>
+                  <h3 className="text-base font-semibold">1. Responsable</h3>
+                  <dl className="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 text-sm">
+                    <dt className="font-medium">Responsable</dt><dd>Brazoom Colombia SAS</dd>
+                    <dt className="font-medium">NIT</dt><dd>901956960-7</dd>
+                    <dt className="font-medium">Domicilio</dt><dd>Calle 24 #84-66, Bogotá, Colombia</dd>
+                    <dt className="font-medium">Correo de contacto</dt><dd>pastelcariocacol@gmail.com</dd>
+                    <dt className="font-medium">Teléfono</dt><dd>324 4524438</dd>
+                  </dl>
+                </section>
+
+                <section>
+                  <h3 className="text-base font-semibold">2. ¿Qué son las cookies?</h3>
+                  <p className="mt-2 text-sm text-muted-foreground">
+                    Las cookies son pequeños archivos que un sitio web coloca en tu dispositivo para reconocerlo, recordar tus
+                    preferencias y mejorar tu experiencia de navegación. Tecnologías similares incluyen píxeles, etiquetas,
+                    almacenamiento local y SDKs en apps.
+                  </p>
+                </section>
+
+                <section>
+                  <h3 className="text-base font-semibold">3. Tipos de cookies que utilizamos</h3>
+                  <ul className="mt-2 list-disc space-y-2 pl-5 text-sm">
+                    <li><span className="font-medium">Esenciales:</span> permiten funciones básicas del sitio y la seguridad (por ejemplo, proceso de compra, inicio de sesión).</li>
+                    <li><span className="font-medium">Preferencias:</span> recuerdan elecciones como idioma o direcciones guardadas.</li>
+                    <li><span className="font-medium">Analíticas:</span> nos ayudan a entender el uso del sitio y mejorar nuestros servicios de forma agregada.</li>
+                    <li><span className="font-medium">Marketing:</span> muestran anuncios relevantes y miden campañas.</li>
+                  </ul>
+                  <p className="mt-2 text-sm text-muted-foreground">
+                    Algunas cookies pueden ser colocadas por terceros que prestan servicios de analítica o publicidad. Estos terceros
+                    pueden combinar información con otros datos que les hayas proporcionado o que hayan recopilado a partir del uso de
+                    sus servicios.
+                  </p>
+                </section>
+
+                <section>
+                  <h3 className="text-base font-semibold">4. Base legal y consentimiento</h3>
+                  <p className="mt-2 text-sm text-muted-foreground">
+                    Instalamos cookies no esenciales (preferencias, analíticas y marketing) únicamente con tu consentimiento, que puedes
+                    otorgar, ajustar o retirar en cualquier momento mediante nuestro banner o centro de preferencias. Las cookies esenciales
+                    se activan por ser necesarias para el funcionamiento del sitio o la prestación del servicio que solicitas.
+                  </p>
+                </section>
+
+                <section>
+                  <h3 className="text-base font-semibold">5. Plazos de conservación</h3>
+                  <p className="mt-2 text-sm text-muted-foreground">
+                    Las cookies de sesión se eliminan cuando cierras el navegador. Las cookies persistentes permanecen en tu dispositivo
+                    por un período que puede variar (por ejemplo, de 1 día a 24 meses), salvo que las borres antes o que retires tu consentimiento.
+                  </p>
+                </section>
+
+                <section>
+                  <h3 className="text-base font-semibold">6. Cómo gestionar las cookies</h3>
+                  <ul className="mt-2 list-disc space-y-2 pl-5 text-sm">
+                    <li>Gestiona tus preferencias desde nuestro banner/centro de consentimiento.</li>
+                    <li>Configura tu navegador para bloquear, limitar o eliminar cookies.</li>
+                    <li>Ten en cuenta que bloquear ciertas cookies puede afectar el funcionamiento del sitio y el proceso de compra.</li>
+                    <li>En tu navegador, visita "Privacidad y seguridad" → "Cookies y datos del sitio".</li>
+                    <li>En dispositivos móviles, revisa los ajustes de privacidad y publicidad para limitar el rastreo.</li>
+                  </ul>
+                </section>
+
+                <section>
+                  <h3 className="text-base font-semibold">7. Cookies de terceros y transferencias</h3>
+                  <p className="mt-2 text-sm text-muted-foreground">
+                    Trabajamos con proveedores que pueden colocar sus propias cookies cuando visitas nuestro sitio. Si ello implica
+                    transferencias internacionales de datos, se realizarán conforme a la normativa aplicable y con garantías adecuadas de protección.
+                  </p>
+                </section>
+
+                <section>
+                  <h3 className="text-base font-semibold">8. Actualizaciones de esta Política</h3>
+                  <p className="mt-2 text-sm text-muted-foreground">
+                    Podemos actualizar esta Política para reflejar cambios legales o en nuestras prácticas. Publicaremos la versión vigente
+                    con su fecha de entrada en vigor y, cuando corresponda, te notificaremos cambios relevantes.
+                  </p>
+                </section>
+
+                <section>
+                  <h3 className="text-base font-semibold">9. Contacto</h3>
+                  <dl className="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 text-sm">
+                    <dt className="font-medium">Email</dt><dd>pastelcariocacol@gmail.com</dd>
+                    <dt className="font-medium">Teléfono</dt><dd>324 4524438</dd>
+                    <dt className="font-medium">Domicilio</dt><dd>Calle 24 #84-66, Bogotá, Colombia</dd>
+                  </dl>
+                </section>
+              </div>
+            </DialogContent>
+          </Dialog>
         </nav>
       </div>
     </footer>
