@@ -1,5 +1,5 @@
 
-import pastel from "@/assets/destaque-pastel.jpg";
+
 import kibbeh from "@/assets/destaque-kibbeh.jpg";
 import pao from "@/assets/destaque-pao-de-queijo.jpg";
 const items = [{
@@ -8,7 +8,7 @@ const items = [{
   desc: "Clásicas de pollo desmechado con toque casero.",
   alt: "Coxinhas doradas crujientes en plato de pizarra"
 }, {
-  img: pastel,
+  img: "/lovable-uploads/c494832f-4efe-4520-8cf3-b25bbe1813fe.png",
   title: "Pastel",
   desc: "Masa ligera, rellenos sabrosos que calientan el alma.",
   alt: "Pastel brasileño frito abierto mostrando su relleno"
