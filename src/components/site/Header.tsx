@@ -7,9 +7,9 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-40 w-full border-b border-border/40 bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-3 self-start">
           <Link to="/" className="inline-flex items-center" aria-label="Pastel Carioca inicio">
-            <img src="/lovable-uploads/d11d43e2-fb65-46d9-9217-db466fb3b4b0.png" alt="Pastel Carioca logo" className="block h-16 w-auto shrink-0 origin-left scale-[3]" width={128} height={48} loading="eager" decoding="async" />
+            <img src="/lovable-uploads/d11d43e2-fb65-46d9-9217-db466fb3b4b0.png" alt="Pastel Carioca logo" className="block h-16 w-auto shrink-0 origin-top-left scale-[3]" width={128} height={48} loading="eager" decoding="async" />
           </Link>
         </div>
         <nav className="hidden md:flex items-center gap-6 text-sm">
