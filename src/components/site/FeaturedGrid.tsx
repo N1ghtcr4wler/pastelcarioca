@@ -1,7 +1,7 @@
 
 
 import kibbeh from "@/assets/destaque-kibbeh.jpg";
-import pao from "@/assets/destaque-pao-de-queijo.jpg";
+
 const items = [{
   img: "/lovable-uploads/9d23cdb3-0a9f-4a98-aa17-69eef09f7c25.png",
   title: "Coxinhas",
@@ -18,7 +18,7 @@ const items = [{
   desc: "Croqueta crujiente con especias y limón.",
   alt: "Kibbeh crujiente con gajo de limón y perejil"
 }, {
-  img: pao,
+  img: "/lovable-uploads/3c167b7d-feb3-4925-b6ee-3e1f517de3d5.png",
   title: "Pão de queijo",
   desc: "Quesitos esponjosos, adictivos y sin culpa.",
   alt: "Pão de queijo en cuenco rústico sobre pizarra"
