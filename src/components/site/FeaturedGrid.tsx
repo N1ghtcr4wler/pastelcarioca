@@ -1,9 +1,9 @@
-import coxinhas from "@/assets/destaque-coxinhas.jpg";
+
 import pastel from "@/assets/destaque-pastel.jpg";
 import kibbeh from "@/assets/destaque-kibbeh.jpg";
 import pao from "@/assets/destaque-pao-de-queijo.jpg";
 const items = [{
-  img: coxinhas,
+  img: "/lovable-uploads/9d23cdb3-0a9f-4a98-aa17-69eef09f7c25.png",
   title: "Coxinhas",
   desc: "Clásicas de pollo desmechado con toque casero.",
   alt: "Coxinhas doradas crujientes en plato de pizarra"
