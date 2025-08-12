@@ -6,7 +6,13 @@ const Header = () => {
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center gap-3">
           <Link to="/" className="inline-flex items-center" aria-label="Pastel Carioca inicio">
-            
+            <img
+              src="/lovable-uploads/3ad68f02-9f3e-4875-99e3-d8eeff791aaf.png"
+              alt="Pastel Carioca logo"
+              className="block h-14 w-auto md:h-16 object-contain object-top"
+              loading="eager"
+              decoding="async"
+            />
           </Link>
         </div>
         <nav className="hidden md:flex items-center gap-6 text-sm">
