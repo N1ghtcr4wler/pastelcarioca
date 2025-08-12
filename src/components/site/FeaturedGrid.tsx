@@ -18,7 +18,7 @@ const items = [
   },
   {
     img: kibbeh,
-    title: "Kibbeh",
+    title: "Kibe",
     desc: "Croqueta crujiente con especias y limón.",
     alt: "Kibbeh crujiente con gajo de limón y perejil",
   },
