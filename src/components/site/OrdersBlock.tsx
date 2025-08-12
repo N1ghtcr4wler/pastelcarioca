@@ -9,7 +9,7 @@ const OrdersBlock = () => {
       <div className="container max-w-3xl">
         <h2 className="text-2xl md:text-3xl font-semibold">Pedidos y agenda</h2>
         <p className="text-muted-foreground mt-2">
-          Domicilios en Bogotá según disponibilidad. Atención en horario comercial. Consulta.
+          Ofrecemos domicilios en Bogotá, sujetos a disponibilidad. Te atendemos en horario comercial. Contáctanos para tu consulta.
         </p>
         <div className="mt-6 flex flex-col sm:flex-row items-center gap-4">
           <Button asChild size="lg" variant="whatsapp">
