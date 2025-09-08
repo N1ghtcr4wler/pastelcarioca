@@ -1,14 +1,15 @@
 
 
 import kibbeh from "@/assets/destaque-kibbeh.jpg";
+import { getPublicAssetPath } from "@/lib/assets";
 
 const items = [{
-  img: "/lovable-uploads/9d23cdb3-0a9f-4a98-aa17-69eef09f7c25.png",
+  img: getPublicAssetPath("/lovable-uploads/9d23cdb3-0a9f-4a98-aa17-69eef09f7c25.png"),
   title: "Coxinhas",
   desc: "Clásicas de pollo desmechado con toque casero.",
   alt: "Coxinhas doradas crujientes en plato de pizarra"
 }, {
-  img: "/lovable-uploads/c494832f-4efe-4520-8cf3-b25bbe1813fe.png",
+  img: getPublicAssetPath("/lovable-uploads/c494832f-4efe-4520-8cf3-b25bbe1813fe.png"),
   title: "Pastel",
   desc: "Masa ligera, rellenos sabrosos que calientan el alma.",
   alt: "Pastel brasileño frito abierto mostrando su relleno"
@@ -18,7 +19,7 @@ const items = [{
   desc: "Croqueta crujiente con especias y limón.",
   alt: "Kibbeh crujiente con gajo de limón y perejil"
 }, {
-  img: "/lovable-uploads/3c167b7d-feb3-4925-b6ee-3e1f517de3d5.png",
+  img: getPublicAssetPath("/lovable-uploads/3c167b7d-feb3-4925-b6ee-3e1f517de3d5.png"),
   title: "Pão de queijo",
   desc: "Quesitos esponjosos, adictivos y sin culpa.",
   alt: "Pão de queijo en cuenco rústico sobre pizarra"
