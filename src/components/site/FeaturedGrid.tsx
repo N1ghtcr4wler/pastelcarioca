@@ -1,6 +1,7 @@
 
 
 import kibbeh from "@/assets/destaque-kibbeh.jpg";
+import bolinha from "@/assets/destaque-bolinha.jpg";
 import { getPublicAssetPath } from "@/lib/assets";
 
 const items = [{
@@ -9,10 +10,10 @@ const items = [{
   desc: "Clásicas de pollo desmechado con toque casero.",
   alt: "Coxinhas doradas crujientes en plato de pizarra"
 }, {
-  img: getPublicAssetPath("/lovable-uploads/c494832f-4efe-4520-8cf3-b25bbe1813fe.png"),
-  title: "Pastel",
-  desc: "Masa ligera, rellenos sabrosos que calientan el alma.",
-  alt: "Pastel brasileño frito abierto mostrando su relleno"
+  img: bolinha,
+  title: "Bolita de queso",
+  desc: "Cada bolita es una explosión de queso fundido envuelta en una capa dorada que cruje al primer bocado.",
+  alt: "Bolitas de queso doradas y crujientes con queso fundido"
 }, {
   img: kibbeh,
   title: "Kibe",
