@@ -1,14 +1,15 @@
 
 
+import coxinhas from "@/assets/destaque-coxinhas.png";
 import bolinha from "@/assets/destaque-bolinha.jpg";
 import risole from "@/assets/destaque-risole.png";
 import { getPublicAssetPath } from "@/lib/assets";
 
 const items = [{
-  img: getPublicAssetPath("/lovable-uploads/9d23cdb3-0a9f-4a98-aa17-69eef09f7c25.png"),
+  img: coxinhas,
   title: "Coxinhas",
-  desc: "Clásicas de pollo desmechado con toque casero.",
-  alt: "Coxinhas doradas crujientes en plato de pizarra"
+  desc: "Descubre el sabor incomparable de las coxinhas con una masa increíblemente ligera, dorada y crocante. El relleno de pollo sazonado con nuestro toque secreto que conquista desde el primer bocado. ¡Una verdadera tentación para el paladar!",
+  alt: "Coxinhas doradas y crujientes con relleno de pollo visible en plato blanco"
 }, {
   img: bolinha,
   title: "Bolita de queso",
