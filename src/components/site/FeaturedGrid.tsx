@@ -1,7 +1,7 @@
 
 
-import kibbeh from "@/assets/destaque-kibbeh.jpg";
 import bolinha from "@/assets/destaque-bolinha.jpg";
+import risole from "@/assets/destaque-risole.png";
 import { getPublicAssetPath } from "@/lib/assets";
 
 const items = [{
@@ -15,10 +15,10 @@ const items = [{
   desc: "Cada bolita es una explosión de queso fundido envuelta en una capa dorada que cruje al primer bocado.",
   alt: "Bolitas de queso doradas y crujientes con queso fundido"
 }, {
-  img: kibbeh,
-  title: "Kibe",
-  desc: "Croqueta crujiente con especias y limón.",
-  alt: "Kibbeh crujiente con gajo de limón y perejil"
+  img: risole,
+  title: "Risole",
+  desc: "Masa ligera y suave con un toque crocante, relleno cremoso y sabor envolvente. Un snack que conquista desde el primer mordisco.",
+  alt: "Risoles dorados y crujientes con relleno cremoso de jamón y queso"
 }, {
   img: getPublicAssetPath("/lovable-uploads/3c167b7d-feb3-4925-b6ee-3e1f517de3d5.png"),
   title: "Pão de queijo",
