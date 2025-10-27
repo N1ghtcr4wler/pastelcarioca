@@ -23,7 +23,7 @@ const items = [{
 }, {
   img: croquetas,
   title: "Croqueta de carne",
-  desc: "Sabrosas, crocantes y jugosas. Nuestras croquetas están hechas con carne bien sazonada y trocitos de aceituna que elevan la experiencia. Perfectas para quienes buscan intensidad y textura en un solo bocado.",
+  desc: "Crocantes y jugosas las croquetas están hechas con carne bien sazonada y trocitos de aceituna que elevan la experiencia. Intensidad y textura en un solo bocado.",
   alt: "Croquetas de carne doradas y crujientes con relleno jugoso visible"
 }];
 const FeaturedGrid = () => {
