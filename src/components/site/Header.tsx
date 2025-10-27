@@ -4,13 +4,13 @@ import { getPublicAssetPath } from "@/lib/assets";
 const WA_MAIN = "https://wa.me/573244524438?text=Hola%21%20Quiero%20Coxinhas%21";
 const Header = () => {
   return <header className="sticky top-0 z-40 w-full border-b border-border/40 bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 items-center justify-between">
+      <div className="container flex h-24 items-center justify-between">
         <div className="flex items-center gap-3">
           <Link to="/" className="inline-flex items-center" aria-label="Pastel Carioca inicio">
             <img
               src={getPublicAssetPath("/lovable-uploads/logo-carioca.png")}
               alt="Pastel Carioca logo"
-              className="block h-14 w-auto md:h-16 object-contain object-top"
+              className="block h-20 w-auto md:h-24 object-contain object-top"
               loading="eager"
               decoding="async"
             />
