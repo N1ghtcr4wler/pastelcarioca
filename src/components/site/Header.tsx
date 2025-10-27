@@ -8,7 +8,7 @@ const Header = () => {
         <div className="flex items-center gap-3">
           <Link to="/" className="inline-flex items-center" aria-label="Pastel Carioca inicio">
             <img
-              src={getPublicAssetPath("/lovable-uploads/3ad68f02-9f3e-4875-99e3-d8eeff791aaf.png")}
+              src={getPublicAssetPath("/lovable-uploads/logo-carioca.png")}
               alt="Pastel Carioca logo"
               className="block h-14 w-auto md:h-16 object-contain object-top"
               loading="eager"
