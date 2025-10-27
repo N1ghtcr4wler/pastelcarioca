@@ -10,7 +10,7 @@ const Header = () => {
             <img
               src={getPublicAssetPath("/lovable-uploads/logo-carioca.png")}
               alt="Pastel Carioca logo"
-              className="block h-20 w-auto md:h-24 object-contain object-top"
+              className="block h-20 w-auto md:h-24 object-contain object-left"
               loading="eager"
               decoding="async"
             />
