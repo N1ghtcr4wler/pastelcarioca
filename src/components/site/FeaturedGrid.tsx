@@ -3,7 +3,7 @@
 import coxinhas from "@/assets/destaque-coxinhas.png";
 import bolinha from "@/assets/destaque-bolinha.jpg";
 import risole from "@/assets/destaque-risole.png";
-import { getPublicAssetPath } from "@/lib/assets";
+import croquetas from "@/assets/destaque-croquetas.jpg";
 
 const items = [{
   img: coxinhas,
@@ -21,10 +21,10 @@ const items = [{
   desc: "Masa ligera y suave con un toque crocante, relleno cremoso y sabor envolvente. Un snack que conquista desde el primer mordisco.",
   alt: "Risoles dorados y crujientes con relleno cremoso de jamón y queso"
 }, {
-  img: getPublicAssetPath("/lovable-uploads/3c167b7d-feb3-4925-b6ee-3e1f517de3d5.png"),
-  title: "Pão de queijo",
-  desc: "Quesitos esponjosos, adictivos y sin culpa.",
-  alt: "Pão de queijo en cuenco rústico sobre pizarra"
+  img: croquetas,
+  title: "Croqueta de carne",
+  desc: "Sabrosas, crocantes y jugosas. Nuestras croquetas están hechas con carne bien sazonada y trocitos de aceituna que elevan la experiencia. Perfectas para quienes buscan intensidad y textura en un solo bocado.",
+  alt: "Croquetas de carne doradas y crujientes con relleno jugoso visible"
 }];
 const FeaturedGrid = () => {
   return <section id="destacados" className="py-16 subtle-texture">
