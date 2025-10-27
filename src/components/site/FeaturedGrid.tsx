@@ -8,7 +8,7 @@ import croquetas from "@/assets/destaque-croquetas.jpg";
 const items = [{
   img: coxinhas,
   title: "Coxinhas",
-  desc: "Descubre el sabor incomparable de las coxinhas con una masa ligera, dorada y crujiente, con un relleno de pollo sazonado y nuestro toque secreto",
+  desc: "Descubre el sabor incomparable de las coxinhas de masa ligera, y crujiente, y el relleno de pollo sazonado con nuestro toque secreto",
   alt: "Coxinhas doradas y crujientes con relleno de pollo visible en plato blanco"
 }, {
   img: bolinha,
