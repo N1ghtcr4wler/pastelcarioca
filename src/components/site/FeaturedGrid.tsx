@@ -8,7 +8,7 @@ import { getPublicAssetPath } from "@/lib/assets";
 const items = [{
   img: coxinhas,
   title: "Coxinhas",
-  desc: "Descubre el sabor incomparable de las coxinhas con una masa increíblemente ligera, dorada y crocante. El relleno de pollo sazonado con nuestro toque secreto que conquista desde el primer bocado. ¡Una verdadera tentación para el paladar!",
+  desc: "Descubre el sabor incomparable de las coxinhas con una masa ligera, dorada y crujiente, con un relleno de pollo sazonado con un toque secreto que resulta irresistible desde el primer bocado!",
   alt: "Coxinhas doradas y crujientes con relleno de pollo visible en plato blanco"
 }, {
   img: bolinha,
