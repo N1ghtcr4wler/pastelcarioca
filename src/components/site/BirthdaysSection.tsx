@@ -6,7 +6,7 @@ const BirthdaysSection = () => {
   return (
     <section id="cumpleanos" className="py-16 subtle-texture">
       <div className="container max-w-3xl">
-        <h2 className="text-2xl md:text-3xl font-semibold">Pasteles para cumpleaños Bogotá y packs infantiles</h2>
+        <h2 className="text-2xl md:text-3xl font-semibold">Pasabocas para cumpleaños y packs infantiles</h2>
         <p className="text-muted-foreground mt-4 max-w-prose">
           Celebra con nuestros <strong>pasteles para cumpleaños Bogotá</strong>. Ofrecemos <strong>mini coxinha para fiestas Bogotá</strong> 
           perfectas para niños y adultos, además de <strong>combos coxinha y Coca-Cola Bogotá</strong> que facilitan tu organización.
