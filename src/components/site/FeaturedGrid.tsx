@@ -22,7 +22,7 @@ const items = [{
   alt: "mini coxinha para fiestas Bogotá - bocados perfectos para eventos"
 }, {
   img: croquetas,
-  title: "Pasabocas para eventos Bogotá",
+  title: "Croquetas de carne",
   desc: "Croquetas crocantes y jugosas con carne sazonada. Ideales para coffee breaks, cumpleaños y reuniones corporativas.",
   alt: "pasabocas para eventos Bogotá - croquetas doradas y crujientes"
 }];
