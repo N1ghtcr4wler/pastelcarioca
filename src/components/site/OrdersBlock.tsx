@@ -6,7 +6,7 @@ const WA_MAIN = "https://wa.me/573244524438?text=Hola%20Pastel%20Carioca%2C%20qu
 
 const OrdersBlock = () => {
   return (
-    <section id="pedidos" className="py-16 subtle-texture">
+    <section id="pedidos" className="py-8 subtle-texture">
       <div className="container max-w-3xl">
         <h2 className="text-2xl md:text-3xl font-semibold">Pedidos y agenda</h2>
         <div className="mt-4 flex flex-col md:flex-row gap-4 items-start">
