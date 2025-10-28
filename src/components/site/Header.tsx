@@ -24,9 +24,6 @@ const Header = () => {
             <a href="#eventos">Eventos</a>
           </Button>
           <Button asChild variant="gold" size="sm">
-            <a href="#novenas">Novenas</a>
-          </Button>
-          <Button asChild variant="gold" size="sm">
             <a href="#pedidos">Pedidos</a>
           </Button>
         </nav>
