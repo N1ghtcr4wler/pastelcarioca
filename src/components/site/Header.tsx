@@ -16,7 +16,7 @@ const Header = () => {
             />
           </Link>
         </div>
-        <nav className="hidden md:flex items-center gap-3 pt-2">
+        <nav className="hidden md:flex items-center gap-3 self-start pt-2">
           <Button asChild variant="gold" size="sm">
             <a href="#destacados">Destacados</a>
           </Button>
@@ -30,7 +30,7 @@ const Header = () => {
             <a href="#redes">Redes</a>
           </Button>
         </nav>
-        <div className="hidden md:flex items-center pt-2">
+        <div className="hidden md:flex items-center self-start pt-2">
           <Button asChild variant="whatsapp">
             <a href={WA_MAIN} aria-label="Pedir por WhatsApp" rel="noopener noreferrer" target="_blank">Pedir por WhatsApp</a>
           </Button>
