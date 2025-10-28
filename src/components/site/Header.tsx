@@ -4,7 +4,7 @@ import { getPublicAssetPath } from "@/lib/assets";
 const WA_MAIN = "https://wa.me/573244524438?text=Hola%21%20Quiero%20Coxinhas%21";
 const Header = () => {
   return <header className="sticky top-0 z-40 w-full border-b border-border/40 bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 items-start justify-between pt-2">
+      <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center gap-3">
           <Link to="/" className="inline-flex items-center" aria-label="Pastel Carioca inicio">
             <img
@@ -30,7 +30,7 @@ const Header = () => {
             <a href="#redes">Redes</a>
           </Button>
         </nav>
-        <div className="hidden md:block">
+        <div className="hidden md:flex items-center">
           <Button asChild variant="whatsapp">
             <a href={WA_MAIN} aria-label="Pedir por WhatsApp" rel="noopener noreferrer" target="_blank">Pedir por WhatsApp</a>
           </Button>
