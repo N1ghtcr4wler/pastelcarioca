@@ -23,6 +23,8 @@ const buttonVariants = cva(
           "bg-primary text-primary-foreground shadow-sm hover:bg-primary/95 hover:ring-2 hover:ring-accent focus-visible:ring-accent",
         hero:
           "bg-transparent border border-accent/30 text-foreground hover:border-accent hover:bg-accent/10",
+        gold:
+          "bg-[hsl(var(--sun-rio-yellow))] text-[hsl(var(--scrim))] shadow-sm hover:bg-[hsl(var(--sun-rio-yellow))]/90 focus-visible:ring-[hsl(var(--sun-rio-yellow))]",
       },
       size: {
         default: "h-10 px-4 py-2",

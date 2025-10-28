@@ -16,11 +16,19 @@ const Header = () => {
             />
           </Link>
         </div>
-        <nav className="hidden md:flex items-center gap-6 text-sm">
-          <a href="#destacados" className="hover:text-accent transition-colors">Destacados</a>
-          <a href="#pedidos" className="hover:text-accent transition-colors">Pedidos</a>
-          <a href="#sobre" className="hover:text-accent transition-colors">Sobre nosotros</a>
-          <a href="#redes" className="hover:text-accent transition-colors">Redes</a>
+        <nav className="hidden md:flex items-center gap-3">
+          <Button asChild variant="gold" size="sm">
+            <a href="#destacados">Destacados</a>
+          </Button>
+          <Button asChild variant="gold" size="sm">
+            <a href="#pedidos">Pedidos</a>
+          </Button>
+          <Button asChild variant="gold" size="sm">
+            <a href="#sobre">Sobre nosotros</a>
+          </Button>
+          <Button asChild variant="gold" size="sm">
+            <a href="#redes">Redes</a>
+          </Button>
         </nav>
         <div className="hidden md:block">
           <Button asChild variant="whatsapp">
