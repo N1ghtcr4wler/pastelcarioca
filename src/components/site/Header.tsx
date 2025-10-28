@@ -27,7 +27,7 @@ const Header = () => {
             <a href="#sobre">Sobre</a>
           </Button>
           <Button asChild variant="ghost" size="sm" className="font-medium">
-            <a href="#social">Social</a>
+            <a href="#redes">Social</a>
           </Button>
         </nav>
         <div className="hidden md:flex items-center self-start pt-2">
