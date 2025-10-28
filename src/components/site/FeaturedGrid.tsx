@@ -13,7 +13,7 @@ const items = [{
 }, {
   img: bolinha,
   title: "Bolitas de queso",
-  desc: "Opción vegetariana ideal para todos. Queso fundido envuelto en capa dorada. Perfectas para pasabocas a domicilio Bogotá.",
+  desc: "Opción vegetariana ideal para todos. Queso fundido envuelto en capa dorada que cruje al primer bocado. Perfectas para compartir.",
   alt: "bolitas de queso vegetarianas Bogotá - doradas con queso fundido"
 }, {
   img: risole,
