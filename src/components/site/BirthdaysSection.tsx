@@ -12,7 +12,7 @@ const BirthdaysSection = () => {
           perfectas para niños y adultos, además de <strong>combos coxinha y Coca-Cola Bogotá</strong> que facilitan tu organización.
         </p>
         <p className="text-muted-foreground mt-3 max-w-prose">
-          Packs desde 20 hasta 100 unidades. Arma tu combo ideal y sorprende a tus invitados con el auténtico sabor brasileño.
+          Packs desde 25 hasta 100 unidades. Arma tu combo ideal y sorprende a tus invitados con el auténtico sabor brasileño.
         </p>
         <div className="mt-6">
           <Button asChild size="lg" variant="whatsapp">
