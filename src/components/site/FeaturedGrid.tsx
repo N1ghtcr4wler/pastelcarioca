@@ -4,6 +4,7 @@ import coxinhas from "@/assets/destaque-coxinhas.png";
 import bolinha from "@/assets/destaque-bolinha.jpg";
 import risole from "@/assets/destaque-risole.png";
 import croquetas from "@/assets/destaque-croquetas.jpg";
+import salchicha from "@/assets/destaque-salchicha.png";
 
 const items = [{
   img: coxinhas,
@@ -25,6 +26,11 @@ const items = [{
   title: "Croquetas de carne",
   desc: "Croquetas crocantes y jugosas con carne sazonada. Ideales para coffee breaks, cumpleaños y reuniones corporativas.",
   alt: "pasabocas para eventos Bogotá - croquetas doradas y crujientes"
+}, {
+  img: salchicha,
+  title: "Envuelto de salchicha",
+  desc: "O enroladinho de salsicha é um petisco popular no Brasil, conhecido por sua massa crocante e recheio saboroso, sendo frequentemente servido em festas, lanches e eventos familiares. Um clássico amado pela criançada, o enroladinho de salsicha é o petisco que não pode faltar em festas infantis.",
+  alt: "envuelto de salchicha para fiestas Bogotá - petisco brasileiro crujiente"
 }];
 const FeaturedGrid = () => {
   return <section id="destacados" className="py-16 subtle-texture">
