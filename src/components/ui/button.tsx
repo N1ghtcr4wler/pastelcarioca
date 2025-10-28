@@ -20,11 +20,11 @@ const buttonVariants = cva(
         link: "text-primary underline-offset-4 hover:underline",
         // CTA variants aligned to the design system tokens
         whatsapp:
-          "bg-primary text-primary-foreground shadow-sm hover:bg-primary/95 hover:ring-2 hover:ring-accent focus-visible:ring-accent",
+          "bg-primary text-primary-foreground shadow-md hover:bg-primary/95 hover:ring-2 hover:ring-accent hover:shadow-lg focus-visible:ring-accent",
         hero:
-          "bg-transparent border border-accent/30 text-foreground hover:border-accent hover:bg-accent/10",
+          "bg-transparent border border-accent/30 text-foreground shadow-md hover:border-accent hover:bg-accent/10 hover:shadow-lg",
         gold:
-          "bg-[hsl(var(--sun-rio-yellow))] text-[hsl(var(--scrim))] shadow-sm hover:bg-[hsl(var(--sun-rio-yellow))]/90 focus-visible:ring-[hsl(var(--sun-rio-yellow))]",
+          "bg-[hsl(var(--sun-rio-yellow))] text-[hsl(var(--scrim))] shadow-md hover:bg-[hsl(var(--sun-rio-yellow))]/90 hover:shadow-lg focus-visible:ring-[hsl(var(--sun-rio-yellow))]",
       },
       size: {
         default: "h-10 px-4 py-2",
