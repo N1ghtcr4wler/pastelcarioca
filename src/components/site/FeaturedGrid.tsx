@@ -12,7 +12,7 @@ const items = [{
   alt: "coxinha a domicilio Bogotá - doradas y crujientes con relleno de pollo"
 }, {
   img: bolinha,
-  title: "Bolitas de queso vegetarianas Bogotá",
+  title: "Bolitas de queso",
   desc: "Opción vegetariana ideal para todos. Queso fundido envuelto en capa dorada. Perfectas para pasabocas a domicilio Bogotá.",
   alt: "bolitas de queso vegetarianas Bogotá - doradas con queso fundido"
 }, {
