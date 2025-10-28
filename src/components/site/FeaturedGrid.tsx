@@ -29,7 +29,7 @@ const items = [{
 }, {
   img: salchicha,
   title: "Envuelto de salchicha",
-  desc: "El Envuelto de salchicha es un aperitivo popular en Brasil, conocido por su masa crujiente y relleno sabroso. Un clásico amado por los niños, es el aperitivo que no puede faltar en fiestas infantiles.",
+  desc: "Un pasaboca popular en Brasil, conocido por su masa crujiente y relleno sabroso. Un clásico amado por los niños, no puede faltar en fiestas infantiles.",
   alt: "envuelto de salchicha para fiestas Bogotá - aperitivo brasileiro crujiente"
 }];
 const FeaturedGrid = () => {
