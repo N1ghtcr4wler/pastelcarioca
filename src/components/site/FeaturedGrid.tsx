@@ -17,7 +17,7 @@ const items = [{
   alt: "bolitas de queso vegetarianas Bogotá - doradas con queso fundido"
 }, {
   img: risole,
-  title: "Risoles",
+  title: "Risoles de jamón y queso",
   desc: "Tamaño perfecto para eventos y celebraciones. Masa suave con toque crocante y relleno cremoso que conquista.",
   alt: "mini coxinha para fiestas Bogotá - bocados perfectos para eventos"
 }, {
