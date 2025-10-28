@@ -21,7 +21,7 @@ const Header = () => {
             <a href="#destacados">Destacados</a>
           </Button>
           <Button asChild variant="ghost" size="sm" className="font-medium">
-            <a href="#pedidos">Pedidos</a>
+            <a href="#eventos">Pedidos</a>
           </Button>
           <Button asChild variant="ghost" size="sm" className="font-medium">
             <a href="#sobre">Sobre</a>
