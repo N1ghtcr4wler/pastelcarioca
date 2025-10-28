@@ -7,24 +7,24 @@ import croquetas from "@/assets/destaque-croquetas.jpg";
 
 const items = [{
   img: coxinhas,
-  title: "Coxinhas",
-  desc: "Descubre el sabor incomparable de las coxinhas de masa ligera, y crujiente, y el relleno de pollo sazonado con nuestro toque secreto",
-  alt: "Coxinhas doradas y crujientes con relleno de pollo visible en plato blanco"
+  title: "Coxinha Bogotá",
+  desc: "La mejor coxinha a domicilio Bogotá. Masa ligera y crujiente con relleno de pollo sazonado. Perfecta para eventos, fiestas y novenas.",
+  alt: "coxinha a domicilio Bogotá - doradas y crujientes con relleno de pollo"
 }, {
   img: bolinha,
-  title: "Bolita de queso",
-  desc: "Cada bolita es una explosión de queso fundido envuelta en una capa dorada que cruje al primer bocado.",
-  alt: "Bolitas de queso doradas y crujientes con queso fundido"
+  title: "Bolitas de queso vegetarianas Bogotá",
+  desc: "Opción vegetariana ideal para todos. Queso fundido envuelto en capa dorada. Perfectas para pasabocas a domicilio Bogotá.",
+  alt: "bolitas de queso vegetarianas Bogotá - doradas con queso fundido"
 }, {
   img: risole,
-  title: "Risole",
-  desc: "Masa ligera y suave con un toque crocante, relleno cremoso y sabor envolvente. Un snack que conquista desde el primer mordisco.",
-  alt: "Risoles dorados y crujientes con relleno cremoso de jamón y queso"
+  title: "Mini coxinha para fiestas Bogotá",
+  desc: "Tamaño perfecto para eventos y celebraciones. Masa suave con toque crocante y relleno cremoso que conquista.",
+  alt: "mini coxinha para fiestas Bogotá - bocados perfectos para eventos"
 }, {
   img: croquetas,
-  title: "Croqueta de carne",
-  desc: "Crocantes y jugosas las croquetas están hechas con carne bien sazonada y trocitos de aceituna que elevan la experiencia. Intensidad y textura en un solo bocado.",
-  alt: "Croquetas de carne doradas y crujientes con relleno jugoso visible"
+  title: "Pasabocas para eventos Bogotá",
+  desc: "Croquetas crocantes y jugosas con carne sazonada. Ideales para coffee breaks, cumpleaños y reuniones corporativas.",
+  alt: "pasabocas para eventos Bogotá - croquetas doradas y crujientes"
 }];
 const FeaturedGrid = () => {
   return <section id="destacados" className="py-16 subtle-texture">

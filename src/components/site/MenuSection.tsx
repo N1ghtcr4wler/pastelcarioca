@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 
-const WA_MAIN = "https://wa.me/573244524438?text=Hola%21%20Quiero%20Coxinhas%21";
+const WA_MAIN = "https://wa.me/573244524438?text=Hola%20Pastel%20Carioca%2C%20quiero%20pedir%20coxinha%20a%20domicilio%20Bogot%C3%A1";
 
 const categories: { name: string; items: string[] }[] = [
   { name: "Coxinhas", items: ["Pollo clásico", "Queso & cebollín"] },

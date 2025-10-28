@@ -1,7 +1,7 @@
 // Hero image served from public lovable-uploads
 import { Button } from "@/components/ui/button";
 import { getPublicAssetPath } from "@/lib/assets";
-const WA_MAIN = "https://wa.me/573244524438?text=Hola%21%20Quiero%20Coxinhas%21";
+const WA_MAIN = "https://wa.me/573244524438?text=Hola%20Pastel%20Carioca%2C%20quiero%20pedir%20coxinha%20a%20domicilio%20Bogot%C3%A1";
 const Hero = () => {
   return <section aria-label="Hero" className="relative overflow-hidden">
       <div className="relative">
@@ -9,9 +9,9 @@ const Hero = () => {
         <div className="relative hero-scrim-16">
           <div className="container min-h-[72vh] md:min-h-[80vh] flex items-center">
             <div className="max-w-2xl py-24">
-              <h1 className="text-4xl md:text-6xl font-extrabold leading-tight text-foreground">Calientico, crujiente y carioca.</h1>
+              <h1 className="text-4xl md:text-6xl font-extrabold leading-tight text-foreground">Coxinha a domicilio en Bogotá</h1>
               <p className="mt-4 text-lg md:text-xl text-foreground max-w-prose">
-                Hecho al momento, con ingredientes de puro sabor Colombiano. Coxinhas y pasabocas brasileños que invitan a bailar.
+                En Pastel Carioca te llevamos la mejor coxinha a domicilio Bogotá. Ofrecemos pasabocas para eventos Bogotá, pasteles para cumpleaños Bogotá y paquetes especiales para novenas Bogotá, con opciones vegetarianas como bolitas de queso vegetarianas Bogotá. Pide ya por WhatsApp.
               </p>
               <div className="mt-8 flex items-center gap-4">
                 <Button asChild size="lg" variant="whatsapp">
