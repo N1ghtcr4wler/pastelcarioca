@@ -16,17 +16,17 @@ const Header = () => {
             />
           </Link>
         </div>
-        <nav className="hidden md:flex items-center gap-3 self-start pt-2">
-          <Button asChild variant="gold" size="sm">
+        <nav className="hidden md:flex items-center gap-1 self-start pt-2">
+          <Button asChild variant="ghost" size="sm" className="font-medium">
             <a href="#destacados">Destacados</a>
           </Button>
-          <Button asChild variant="gold" size="sm">
+          <Button asChild variant="ghost" size="sm" className="font-medium">
             <a href="#eventos">Eventos</a>
           </Button>
-          <Button asChild variant="gold" size="sm">
+          <Button asChild variant="ghost" size="sm" className="font-medium">
             <a href="#novenas">Novenas</a>
           </Button>
-          <Button asChild variant="gold" size="sm">
+          <Button asChild variant="ghost" size="sm" className="font-medium">
             <a href="#pedidos">Pedidos</a>
           </Button>
         </nav>
