@@ -7,7 +7,7 @@ import croquetas from "@/assets/destaque-croquetas.jpg";
 
 const items = [{
   img: coxinhas,
-  title: "Coxinha Bogotá",
+  title: "Coxinha Tradicional",
   desc: "La mejor coxinha a domicilio Bogotá. Masa ligera y crujiente con relleno de pollo sazonado. Perfecta para eventos, fiestas y novenas.",
   alt: "coxinha a domicilio Bogotá - doradas y crujientes con relleno de pollo"
 }, {
