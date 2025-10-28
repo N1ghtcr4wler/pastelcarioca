@@ -5,7 +5,7 @@ const WA_MAIN = "https://wa.me/573244524438?text=Hola%20Pastel%20Carioca%2C%20qu
 
 const EventsSection = () => {
   return (
-    <section id="eventos" className="py-8">
+    <section id="eventos" className="py-4">
       <div className="container max-w-3xl">
         <h2 className="text-2xl md:text-3xl font-semibold">Pasabocas para eventos Bogotá — Packs y catering</h2>
         <div className="mt-6 flex flex-col md:flex-row gap-6 items-start">
