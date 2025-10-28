@@ -29,8 +29,8 @@ const items = [{
 }, {
   img: salchicha,
   title: "Envuelto de salchicha",
-  desc: "O enroladinho de salsicha é um petisco popular no Brasil, conhecido por sua massa crocante e recheio saboroso, sendo frequentemente servido em festas, lanches e eventos familiares. Um clássico amado pela criançada, o enroladinho de salsicha é o petisco que não pode faltar em festas infantis.",
-  alt: "envuelto de salchicha para fiestas Bogotá - petisco brasileiro crujiente"
+  desc: "El enrollado de salchicha es un aperitivo popular en Brasil, conocido por su masa crujiente y relleno sabroso, siendo frecuentemente servido en fiestas, meriendas y eventos familiares. Un clásico amado por los niños, el enrollado de salchicha es el aperitivo que no puede faltar en fiestas infantiles.",
+  alt: "envuelto de salchicha para fiestas Bogotá - aperitivo brasileiro crujiente"
 }];
 const FeaturedGrid = () => {
   return <section id="destacados" className="py-16 subtle-texture">
