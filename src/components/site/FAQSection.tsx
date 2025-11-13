@@ -8,10 +8,6 @@ import {
 const FAQSection = () => {
   const faqs = [
     {
-      question: "¿Hacen pedidos de coxinha para novenas en Bogotá?",
-      answer: "Sí, ofrecemos packs para novenas Bogotá con entrega a domicilio. Puedes reservar packs de 9 días con descuento especial y recibir pasabocas frescos cada jornada."
-    },
-    {
       question: "¿Puedo pedir mini coxinha para fiestas en Bogotá?",
       answer: "Sí, contamos con mini coxinha para fiestas Bogotá perfectas para eventos infantiles y adultos. También ofrecemos combos coxinha y Coca-Cola Bogotá para facilitar tu organización."
     },
