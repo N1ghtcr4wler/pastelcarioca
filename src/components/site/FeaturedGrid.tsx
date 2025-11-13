@@ -28,9 +28,9 @@ const items = [{
   alt: "pasabocas para eventos Bogotá - croquetas doradas y crujientes"
 }, {
   img: salchicha,
-  title: "Envuelto de salchicha",
+  title: "Rollito de salchicha",
   desc: "Un pasaboca popular en Brasil, conocido por su masa crujiente y relleno sabroso. Un clásico amado por los niños, no puede faltar en fiestas infantiles.",
-  alt: "envuelto de salchicha para fiestas Bogotá - aperitivo brasileiro crujiente"
+  alt: "rollito de salchicha para fiestas Bogotá - aperitivo brasileiro crujiente"
 }];
 const FeaturedGrid = () => {
   return <section id="destacados" className="py-16 subtle-texture">
