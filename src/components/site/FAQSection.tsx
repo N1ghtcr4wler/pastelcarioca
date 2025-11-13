@@ -8,24 +8,32 @@ import {
 const FAQSection = () => {
   const faqs = [
     {
-      question: "¿Puedo pedir mini coxinha para fiestas en Bogotá?",
-      answer: "Sí, contamos con mini coxinha para fiestas Bogotá perfectas para eventos infantiles y adultos. También ofrecemos combos coxinha y Coca-Cola Bogotá para facilitar tu organización."
+      question: "¿Ofrecen coxinha y salgados brasileños a domicilio en Bogotá?",
+      answer: "¡Sí! Entregamos coxinha crujiente a domicilio en toda Bogotá. Si tu pedido entra antes de las 8 p.m., llega el mismo día por motero. 🚚"
     },
     {
-      question: "¿Cómo pido por WhatsApp coxinha en Bogotá?",
-      answer: "Usa nuestro botón 'Pide por WhatsApp — coxinha a domicilio Bogotá' ubicado en la parte superior e inferior de la página. Te atenderemos de inmediato y coordinaremos tu pedido."
+      question: "¿Cómo hago mi pedido por WhatsApp en Bogotá?",
+      answer: "Muy fácil: toca el botón \"Pide por WhatsApp — coxinha a domicilio Bogotá\" en nuestra web o escribe al 324 452 4438. Te atendemos al instante y coordinamos tu delivery."
     },
     {
-      question: "¿Ofrecen opciones vegetarianas?",
-      answer: "Sí, tenemos bolitas de queso vegetarianas Bogotá y otras opciones sin carne. Todos nuestros productos vegetarianos mantienen el mismo sabor y calidad que nuestras recetas tradicionales."
+      question: "¿Qué tipos de salgados brasileños ofrecen?",
+      answer: "Nuestras especialidades son:\n- Coxinha de pollo\n- Bolitas de queso 🧀\n- Risoles de jamón‑queso\n- Croquetas de carne\nTodos preparados con masa crujiente y recetas auténticas brasileñas."
     },
     {
-      question: "¿Cuál es el mínimo de pedido para domicilio?",
-      answer: "El pedido mínimo varía según la zona de Bogotá. Contáctanos por WhatsApp para consultar disponibilidad en tu sector y conocer nuestras promociones vigentes."
+      question: "¿Tienen opciones vegetarianas?",
+      answer: "Sí. Ofrecemos bolitas de queso y otros pasabocas sin carne, con ingredientes frescos y sabor brasileño auténtico. Consultanos."
     },
     {
-      question: "¿Hacen pasabocas para eventos corporativos?",
-      answer: "Sí, ofrecemos pasabocas para eventos Bogotá ideales para reuniones empresariales, coffee breaks y celebraciones corporativas. Solicita tu cotización personalizada por WhatsApp."
+      question: "¿Cuál es el pedido mínimo para delivery en Bogotá?",
+      answer: "El mínimo varía según tu ubicación. Escríbenos por WhatsApp para confirmar cobertura y conocer promociones exclusivas."
+    },
+    {
+      question: "¿Atienden fiestas y eventos en Bogotá?",
+      answer: "¡Claro! Somos especialistas en catering brasileño para cumpleaños, novenas, coffee breaks y celebraciones corporativas. Cotización personalizada por WhatsApp. 🎉"
+    },
+    {
+      question: "¿Aceptan pedidos por caja para compartir?",
+      answer: "Sí. Vendemos cajas de coixinha, bolitas de queso y mix de salgados, ideales para reuniones en casa, oficina o eventos."
     }
   ];
 
