@@ -59,17 +59,6 @@ const CoxinhaDetailsSection = () => {
           </ul>
         </div>
 
-        {/* Video */}
-        <div className="mb-12">
-          <h3 className="text-2xl font-semibold mb-4 text-center">Cómo se hace una Coxinha en Pastel Carioca</h3>
-          <div className="aspect-video rounded-lg overflow-hidden bg-muted">
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Cómo se hace una coxinha en Pastel Carioca" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen className="w-full h-full" />
-          </div>
-          <p className="text-sm text-muted-foreground mt-2 text-center">
-            Mira el proceso artesanal de elaboración de nuestras coxinhas brasileñas frescas en Bogotá
-          </p>
-        </div>
-
         {/* Varieties Table */}
         <div className="mb-12">
           <h3 className="text-2xl font-semibold mb-6 text-center">Nuestras Variedades de Coxinha</h3>
