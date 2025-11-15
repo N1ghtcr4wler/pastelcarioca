@@ -12,7 +12,7 @@ const Hero = () => {
               <h1 className="text-4xl md:text-6xl font-extrabold leading-tight text-foreground">Crujiente, calientica y Carioca.</h1>
               <p className="mt-3 text-xl md:text-2xl font-semibold text-foreground/90">La Mejor Coxinha Brasileña en Bogotá - Crujiente y Deliciosa</p>
               <p className="mt-4 text-lg md:text-xl text-foreground max-w-prose">
-                Descubre la auténtica coxinha brasileña: masa ligera dorada, relleno de pollo sazonado con un toque secreto. Ideal para dine-in (visítanos), take out, delivery o eventos corporativos en Bogotá. Hecho al momento con ingredientes frescos. Pide coxinha a domicilio y recibe entrega puntual.
+                ¡Descubre el irresistible encanto de la autentica coxinha brasileña en Pastel Carioca! Masa ligera dorada, relleno de pollo sazonado con un toque secreto que te transporta directo a las calles de Brasil. Es el snack ideal para disfrutar en nuestra tienda, llevarte a casa, pedir a domicilio o sorprender en tus eventos. Preparada al instante con ingredientes de calidad para un sabor auténtico en cada bocado. ¡Haz tu pedido ahora y recibe una entrega rápida y sin complicaciones!
               </p>
               <div className="mt-8 flex items-center gap-4">
                 <Button asChild size="lg" variant="whatsapp">
