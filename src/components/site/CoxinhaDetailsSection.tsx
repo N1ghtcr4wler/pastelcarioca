@@ -59,25 +59,6 @@ const CoxinhaDetailsSection = () => {
           </ul>
         </div>
 
-        {/* Gallery */}
-        <div className="mb-12">
-          <h3 className="text-2xl font-semibold mb-6 text-center">Galería de Nuestras Coxinhas</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            <div className="rounded-lg overflow-hidden">
-              <img src="/lovable-uploads/9d24aac6-1463-401e-8ee8-9b18d458ebce.png" alt="Coxinha de pollo clásica en Bogotá - dorada y crujiente" className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300" loading="lazy" />
-            </div>
-            <div className="rounded-lg overflow-hidden">
-              <img src="/lovable-uploads/c494832f-4efe-4520-8cf3-b25bbe1813fe.png" alt="Coxinha de queso derretido para eventos Bogotá" className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300" loading="lazy" />
-            </div>
-            <div className="rounded-lg overflow-hidden">
-              <img src="/lovable-uploads/9d23cdb3-0a9f-4a98-aa17-69eef09f7c25.png" alt="Mini coxinha vegetariana para catering corporativo Bogotá" className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300" loading="lazy" />
-            </div>
-            <div className="rounded-lg overflow-hidden">
-              <img src="/lovable-uploads/d11d43e2-fb65-46d9-9217-db466fb3b4b0.png" alt="Pack de coxinhas brasileñas para fiestas en Bogotá" className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300" loading="lazy" />
-            </div>
-          </div>
-        </div>
-
         {/* Testimonials */}
         <div className="mb-12">
           <h3 className="text-2xl font-semibold mb-6 text-center">Lo que Dicen Nuestros Clientes sobre Nuestra Coxinha</h3>
