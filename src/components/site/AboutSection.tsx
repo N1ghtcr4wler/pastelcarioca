@@ -29,7 +29,7 @@ const AboutSection = () => {
                 <span className="font-medium text-foreground">Frescura honesta.</span> Cocinamos al pedido, en lotes pequeños y con tiempos claros, para que recibas siempre el mejor punto y sabor.
               </li>
               <li>
-                <span className="font-medium text-foreground">Cuidado en cada entrega.</span> Empacamos con cajas térmicas para que disfrutes la experiencia tal como la pensamos.
+                <span className="font-medium text-foreground">Cuidado en cada entrega.</span> Empacamos con cajas propias para que disfrutes la experiencia tal como la pensamos.
               </li>
               <li>
                 <span className="font-medium text-foreground">Sabor con responsabilidad.</span> Gestionamos y reciclamos nuestros aceites y trabajamos con prácticas que minimizan el impacto ambiental sin sacrificar el gusto.
