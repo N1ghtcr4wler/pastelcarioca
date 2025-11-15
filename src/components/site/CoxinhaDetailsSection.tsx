@@ -28,29 +28,24 @@ const CoxinhaDetailsSection = () => {
           <h3 className="text-2xl font-semibold mb-4">La Auténtica Coxinha Brasileña en Bogotá</h3>
           <p className="text-muted-foreground mb-4">
             La coxinha brasileña es mucho más que un simple pasabocas. Es una experiencia culinaria que combina tradición, sabor y textura en cada bocado.
-
-
-
-La coxinha, un aperitivo brasileño adorado que significa "muslito" en portugués, remonta sus orígenes a finales del siglo XIX durante la era del Imperio Brasileño en la región de São Paulo. Según una leyenda popular, frecuentemente relatada en el libro "Stories & Recipes" de Nadir Cavazin, fue inventada en la Fazenda Morro Azul para complacer al hijo de la princesa Isabel, un joven príncipe caprichoso que se negaba a comer cualquier cosa que no fueran muslos de pollo. Cuando se agotaron las existencias, un cocinero ingenioso improvisó deshuesando carne de pollo, envolviéndola en masa, dándole forma de muslo, empanándola y friéndola hasta obtener un dorado perfecto; el príncipe la amó tanto que pronto se extendió más allá del hogar real.
-
-Con el tiempo, la coxinha se convirtió en un alimento callejero emblemático en todo Brasil, con variaciones en rellenos y tamaños, simbolizando la herencia culinaria creativa del país que fusiona influencias indígenas, europeas y africanas.
-
-
-
- <strong>coxinha brasileña</strong> es mucho más que un simple pasabocas. Es una experiencia culinaria que combina tradición, sabor y textura en cada bocado. 
-            Nuestra <strong>coxinha de frango</strong> (coxinha de pollo) se elabora con una masa especial a base de harina de trigo, caldo de pollo y mantequilla, que le da esa textura 
-            suave por dentro y crujiente por fuera que tanto caracteriza a este snack brasileño.
           </p>
           <p className="text-muted-foreground mb-4">
-               Nuestra coxinha de frango (coxinha de pollo) se elabora con una masa especial a base de harina de trigo, caldo de pollo y mantequilla, que le da esa textura suave por dentro y crujiente por fuera que tanto caracteriza a este snack brasileño.
-
-
-El relleno de nuestra coxinha es pollo desmenuzado finamente sazonado con una mezcla secreta de especias. Cada coxinha se moldea a mano en su característica forma de "colombina de pollo" (de ahí su nombre), se empaniza con pan rallado fino y se fríe hasta alcanzar el punto perfecto de dorado. El resultado: una capa exterior crujiente que protege un interior cremoso y lleno de sabor.
+            La coxinha, un aperitivo brasileño adorado que significa "muslito" en portugués, remonta sus orígenes a finales del siglo XIX durante la era del Imperio Brasileño en la región de São Paulo. Según una leyenda popular, frecuentemente relatada en el libro "Stories & Recipes" de Nadir Cavazin, fue inventada en la Fazenda Morro Azul para complacer al hijo de la princesa Isabel, un joven príncipe caprichoso que se negaba a comer cualquier cosa que no fueran muslos de pollo.
           </p>
           <p className="text-muted-foreground mb-4">
-            Lo mejor de nuestra <strong>coxinha para catering en Bogotá</strong> es su versatilidad. Perfecta para eventos corporativos, cumpleaños, novenas o simplemente 
-            para disfrutar en casa con la familia. Además, ofrecemos opciones vegetarianas y de queso para todos los gustos. Nuestras coxinhas son preparadas al momento 
-            con ingredientes frescos, sin conservantes ni aditivos artificiales.
+            Cuando se agotaron las existencias, un cocinero ingenioso improvisó deshuesando carne de pollo, envolviéndola en masa, dándole forma de muslo, empanándola y friéndola hasta obtener un dorado perfecto; el príncipe la amó tanto que pronto se extendió más allá del hogar real.
+          </p>
+          <p className="text-muted-foreground mb-4">
+            Con el tiempo, la coxinha se convirtió en un alimento callejero emblemático en todo Brasil, con variaciones en rellenos y tamaños, simbolizando la herencia culinaria creativa del país que fusiona influencias indígenas, europeas y africanas.
+          </p>
+          <p className="text-muted-foreground mb-4">
+            Nuestra <strong>coxinha de frango</strong> (coxinha de pollo) se elabora con una masa especial a base de harina de trigo, que le da esa textura suave por dentro y crujiente por fuera que tanto caracteriza a este snack brasileño. El relleno de nuestra coxinha es pollo desmenuzado finamente sazonado con una mezcla secreta de especias. Cada coxinha se moldea individualmente en su característica forma de "colombina de pollo", se empaniza y se fríe hasta alcanzar el punto perfecto de dorado. El resultado: una capa exterior crujiente que protege un interior cremoso y lleno de sabor.
+          </p>
+          <p className="text-muted-foreground mb-4">
+            Lo mejor de nuestra <strong>coxinha para catering en Bogotá</strong> es su versatilidad. Perfecta para eventos corporativos, cumpleaños, novenas o simplemente para disfrutar en casa con la familia.
+          </p>
+          <p className="text-muted-foreground mb-4">
+            Además, ofrecemos opciones vegetarianas y para todos los gustos. Nuestras coxinhas son fritas al momento con ingredientes frescos, sin conservantes ni aditivos artificiales.
           </p>
           
           <h4 className="text-xl font-semibold mt-8 mb-3">Beneficios de Nuestras Coxinhas:</h4>
