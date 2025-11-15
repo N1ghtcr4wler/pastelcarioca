@@ -86,8 +86,7 @@ const CoxinhaDetailsSection = () => {
                 <div className="text-yellow-500">★★★★★</div>
               </div>
               <p className="text-muted-foreground mb-4 italic">
-                "Esas coxinhas desaparecieron en 5 minutos.
-Deliciosas Muchas gracias."
+                "Esas coxinhas desaparecieron en 5 minutos. Deliciosas! Muchas gracias."
               </p>
               <p className="font-semibold">- Wandy Moreno</p>
             </div>
