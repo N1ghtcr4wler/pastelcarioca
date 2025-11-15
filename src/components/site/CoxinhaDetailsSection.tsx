@@ -86,9 +86,10 @@ const CoxinhaDetailsSection = () => {
                 <div className="text-yellow-500">★★★★★</div>
               </div>
               <p className="text-muted-foreground mb-4 italic">
-                "La coxinha vegetariana es deliciosa. Crujiente por fuera, suave por dentro. Perfectas para mi cumpleaños. ¡Volveré a pedir!"
+                "Esas coxinhas desaparecieron en 5 minutos.
+Deliciosas Muchas gracias."
               </p>
-              <p className="font-semibold">- Laura Pérez</p>
+              <p className="font-semibold">- Wandy Moreno</p>
             </div>
           </div>
         </div>
