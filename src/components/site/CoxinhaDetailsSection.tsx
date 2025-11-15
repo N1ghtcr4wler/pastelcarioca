@@ -59,32 +59,6 @@ const CoxinhaDetailsSection = () => {
           </ul>
         </div>
 
-        {/* Varieties Table */}
-        <div className="mb-12">
-          <h3 className="text-2xl font-semibold mb-6 text-center">Nuestras Variedades de Coxinha</h3>
-          <div className="overflow-x-auto">
-            <table className="w-full border-collapse">
-              <thead>
-                <tr className="border-b">
-                  <th className="text-left p-4 font-semibold">Variedad</th>
-                  <th className="text-left p-4 font-semibold">Descripción</th>
-                  <th className="text-right p-4 font-semibold">Precio</th>
-                </tr>
-              </thead>
-              <tbody>
-                {varieties.map((variety, index) => <tr key={index} className="border-b hover:bg-muted/50 transition-colors">
-                    <td className="p-4 font-medium">{variety.name}</td>
-                    <td className="p-4 text-muted-foreground">{variety.description}</td>
-                    <td className="p-4 text-right font-semibold">{variety.price}</td>
-                  </tr>)}
-              </tbody>
-            </table>
-          </div>
-          <p className="text-sm text-muted-foreground mt-4 text-center">
-            *Precios por unidad. Packs especiales disponibles para eventos y catering
-          </p>
-        </div>
-
         {/* Gallery */}
         <div className="mb-12">
           <h3 className="text-2xl font-semibold mb-6 text-center">Galería de Nuestras Coxinhas</h3>
