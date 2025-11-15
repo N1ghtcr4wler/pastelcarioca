@@ -18,10 +18,13 @@ const Header = () => {
         </div>
         <nav className="hidden md:flex items-center gap-1 self-start pt-2">
           <Button asChild variant="ghost" size="sm" className="font-medium">
+            <a href="#coxinha">Coxinha</a>
+          </Button>
+          <Button asChild variant="ghost" size="sm" className="font-medium">
             <a href="#destacados">Destacados</a>
           </Button>
           <Button asChild variant="ghost" size="sm" className="font-medium">
-            <a href="#eventos">Pedidos</a>
+            <a href="#pedidos">Pedidos</a>
           </Button>
           <Button asChild variant="ghost" size="sm" className="font-medium">
             <a href="#sobre">Sobre</a>
@@ -35,7 +38,7 @@ const Header = () => {
         </nav>
         <div className="hidden md:flex items-center self-start pt-2">
           <Button asChild variant="whatsapp">
-            <a href={WA_MAIN} aria-label="Pedir por WhatsApp" rel="noopener noreferrer" target="_blank">Pedir por WhatsApp</a>
+            <a href={WA_MAIN} aria-label="Pedir Coxinha por WhatsApp" rel="noopener noreferrer" target="_blank">Pedir Coxinha por WhatsApp</a>
           </Button>
         </div>
       </div>
