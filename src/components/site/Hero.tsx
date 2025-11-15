@@ -9,9 +9,9 @@ const Hero = () => {
         <div className="relative hero-scrim-16">
           <div className="container min-h-[72vh] md:min-h-[80vh] flex items-center">
             <div className="max-w-2xl py-24">
-              <h1 className="text-4xl md:text-6xl font-extrabold leading-tight text-foreground">Calientico, crujiente y Carioca.</h1>
+              <h1 className="text-4xl md:text-6xl font-extrabold leading-tight text-foreground">La Mejor Coxinha Brasileña en Bogotá - Crujiente y Deliciosa</h1>
               <p className="mt-4 text-lg md:text-xl text-foreground max-w-prose">
-                Hecho al momento, con ingredientes de puro sabor. Coxinhas y pasabocas brasileños que invitan a bailar. Porciones individuales, para compartir o packs para fiestas, cumpleaños y eventos en Bogotá. Cotiza hoy por WhatsApp y recibe entrega puntual.
+                Descubre la auténtica coxinha brasileña: masa ligera dorada, relleno de pollo sazonado con un toque secreto. Ideal para dine-in (visítanos), take out, delivery o eventos corporativos en Bogotá. Hecho al momento con ingredientes frescos. Pide coxinha a domicilio y recibe entrega puntual.
               </p>
               <div className="mt-8 flex items-center gap-4">
                 <Button asChild size="lg" variant="whatsapp">
