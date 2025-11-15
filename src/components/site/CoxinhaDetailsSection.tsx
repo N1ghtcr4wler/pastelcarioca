@@ -28,8 +28,8 @@ const CoxinhaDetailsSection = () => {
             suave por dentro y crujiente por fuera que tanto caracteriza a este snack brasileño.
           </p>
           <p className="text-muted-foreground mb-4">
-            El relleno de nuestra coxinha es pollo desmenuzado finamente sazonado con una mezcla secreta de especias que incluye cebolla, ajo, perejil y un toque de limón. 
-            Cada coxinha se moldea a mano en su característica forma de "muslo de pollo" (de ahí su nombre), se empaniza con pan rallado fino y se fríe hasta alcanzar 
+            El relleno de nuestra coxinha es pollo desmenuzado finamente sazonado con una mezcla secreta de especias. 
+            Cada coxinha se moldea a mano en su característica forma de "colombina de pollo" (de ahí su nombre), se empaniza con pan rallado fino y se fríe hasta alcanzar 
             el punto perfecto de dorado. El resultado: una capa exterior crujiente que protege un interior cremoso y lleno de sabor.
           </p>
           <p className="text-muted-foreground mb-4">
