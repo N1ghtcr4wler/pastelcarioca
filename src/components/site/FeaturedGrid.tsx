@@ -24,7 +24,7 @@ const items = [{
 }, {
   img: croquetas,
   title: "Croquetas de carne",
-  desc: "Croquetas crocantes y jugosas con carne sazonada. Ideales para coffee breaks, cumpleaños y reuniones corporativas.",
+  desc: "Croquetas jugosas con carne sazonada. Ideales para coffee breaks, cumpleaños y reuniones corporativas.",
   alt: "pasabocas para eventos Bogotá - croquetas doradas y crujientes"
 }, {
   img: salchicha,
