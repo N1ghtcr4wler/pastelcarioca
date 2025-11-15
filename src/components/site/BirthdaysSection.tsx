@@ -11,8 +11,7 @@ const BirthdaysSection = () => {
           </div>
           <div className="md:w-1/2">
             <p className="text-muted-foreground max-w-prose">
-              Celebra con nuestros pasteles para cumpleaños Bogotá. Ofrecemos mini coxinha para fiestas Bogotá. perfectas para niños y adultos, además de combos coxinha y Coca-Cola Bogotá que facilitan tu organización. <strong>pasteles para cumpleaños Bogotá</strong>. Ofrecemos <strong>mini coxinha para fiestas Bogotá</strong> 
-              perfectas para niños y adultos, además de <strong>combos coxinha y Coca-Cola Bogotá</strong> que facilitan tu organización.
+              Celebra con nuestros pasabocas para cumpleaños Bogotá. Ofrecemos coxinha y pasabocas para fiestas Bogotá. Son perfectas para niños y adultos, además de Kits Fiesta que facilitan tu organización.
             </p>
             <p className="text-muted-foreground mt-3 max-w-prose">
               Packs desde 25 hasta 100 unidades. Arma tu combo ideal y sorprende a tus invitados con el auténtico sabor brasileño.
