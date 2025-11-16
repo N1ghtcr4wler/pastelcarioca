@@ -20,7 +20,7 @@ const CoxinhaDetailsSection = () => {
           ¿Qué es una Coxinha? Descubre Nuestro Producto Estrella
         </h2>
         <p className="text-xl text-muted-foreground text-center mb-12 max-w-2xl mx-auto">
-          La coxinha es un salgadinho brasileño icónico: una croqueta en forma de colombina de pollo, con masa ligera y crujiente, rellena de pollo desmenuzado sazonado.
+          La coxinha [Co-shi-ña] es un salgadinho brasileño icónico: una croqueta en forma de colombina de pollo, con masa ligera y crujiente, rellena de pollo desmenuzado sazonado.
         </p>
 
         {/* Description */}
