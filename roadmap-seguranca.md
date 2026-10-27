@@ -269,19 +269,19 @@ Informado pelo Johann em 2026-10-27: só ele e o Paul têm acesso ao projeto Fir
 
 Com a lista de pessoas e o plano de cobrança resolvidos, restam três pontos:
 
-- **Papel de cada conta.** Informado pelo Johann: o Paul é Owner de tudo (GitHub e Firebase). É o esperado para o dono do projeto, mas concentra o poder de apagar o site ou mudar o plano numa só pessoa. **O papel do Johann no Firebase não foi informado**; observado: a conta `johnrj` conseguiu listar projetos e fazer deploy no Hosting (CHG0001 e CHG0002), então tem ao menos permissão de deploy, mas não se sabe se mais que isso.
-- **2FA.** Se qualquer uma das duas contas Google não tem verificação em duas etapas, o projeto inteiro depende de uma senha. Não se sabe.
+- **Papel de cada conta.** Informado em 2026-10-27 (declaração, não verificada no console): o Paul é **Owner** de tudo (GitHub e Firebase) e o Johann é **Editor** no Firebase. Editor permite publicar e alterar o projeto, mas não gerencia permissões (IAM) nem o plano de cobrança, que ficam com o Owner; o desenho está correto para um desenvolvedor que não é dono. O Editor do Google Cloud é um papel amplo (o mínimo para só publicar seria Firebase Hosting Admin), então o risco residual é uma conta comprometida do Johann poder apagar ou alterar o site e habilitar serviços; no Spark isso não gera cobrança. Baixa prioridade.
+- **2FA.** Johann: **ativo** na conta Google (declarado). Paul: **não informado**; é o ponto que importa, porque ele é Owner do projeto e do repositório (conta Google e conta do GitHub).
 - **Plano de cobrança: resolvido.** Informado pelo Johann em 2026-10-27: o plano é **Spark** (gratuito; declaração, não verificada no console). Nele, estourar a cota só tira o site do ar, sem cobrança, então o risco de fatura por pico de tráfego ou ataque não existe. Fica a observação de que o Spark limita o Hosting (armazenamento e transferência mensal); um site com PNGs de 1 a 2 MB consome transferência mais rápido do que o necessário. Se o plano virar Blaze (por exemplo para habilitar Functions ou outro serviço), o risco de custo sem teto passa a valer e o alerta de orçamento é obrigatório.
 - **Conta de serviço do deploy automático.** O workflow do GitHub (item 4) vai exigir uma service account com chave guardada como secret no repositório. Isso passa a ser um terceiro "acesso" ao projeto, que deve ter o menor papel possível (só deploy no Hosting).
 
-Severidade: indeterminada até verificar o papel e o 2FA; potencialmente alta (tomada de controle do site). O risco de custo sem limite saiu da conta com o plano Spark, e a lista curta de acessos reduz o risco de terceiros desconhecidos.
+Severidade: baixa para o papel do Johann (Editor, 2FA ativo); indeterminada para o 2FA do Paul até ele confirmar; potencialmente alta se o Owner estiver sem 2FA (tomada de controle do site e do repositório).
 
 ### Solução proposta
 
 Verificar no console do Firebase/Google Cloud:
 
-1. **Configurações do projeto → Usuários e permissões:** o Paul confere que ele é Owner, qual é o papel do Johann (idealmente só o necessário para publicar, como Firebase Hosting Admin, e não Owner/Editor; ao fim da migração, rever se o Johann precisa continuar com acesso) e que não há outras contas.
-2. **2FA nas duas contas Google e na conta do GitHub do Paul** (de preferência chave de segurança ou app autenticador, não só SMS).
+1. **Configurações do projeto → Usuários e permissões:** o Paul confere que ele é Owner, que o Johann é Editor e que não há outras contas. Reduzir o Johann para Firebase Hosting Admin é opcional (menor privilégio); ao fim da migração, rever se o Johann precisa continuar com acesso.
+2. **2FA na conta Google e na conta do GitHub do Paul** (de preferência chave de segurança ou app autenticador, não só SMS). Johann já tem.
 3. **Plano:** manter no Spark. Antes de qualquer upgrade para Blaze, criar um **alerta de orçamento** no Cloud Billing (por exemplo, aviso em 50% e 100% de um valor mensal baixo).
 4. ~~Storage, Authentication e App Check~~ **Confirmado em 2026-10-27, por prints do console enviados pelo Johann:** App Check mostra a tela inicial com "Começar" (nunca configurado); Authentication mostra a tela inicial com "Vamos começar" (nunca configurado, sem provedores nem usuários); Storage exibe "Para usar Storage, faça upgrade do plano de preços do seu projeto" (não habilitado, e bloqueado enquanto o plano for Spark, o que também é consistente com o plano informado).
 5. Ao criar a service account do deploy (CHG0003), dar só o papel de deploy no Hosting e registrar a conta aqui.
@@ -289,7 +289,7 @@ Verificar no console do Firebase/Google Cloud:
 
 Riscos e consequências:
 
-- Reduzir o papel do Johann pode impedir algo que ele faz hoje (por exemplo mexer em domínio ou configuração). Combinar com o Paul antes, já que é ele quem administra as permissões.
+- Reduzir o papel do Johann para Hosting Admin pode impedir algo que ele faz hoje (por exemplo mexer em outros serviços ou configuração). Combinar com o Paul antes, já que é ele quem administra as permissões.
 - No Spark, se a cota de transferência do Hosting estourar, o site fica indisponível até o ciclo virar ou até o upgrade. Otimizar as imagens (PNGs de 1 a 2 MB) reduz esse risco e também melhora o carregamento.
 - Alerta de orçamento (relevante só no Blaze) não bloqueia gasto, só avisa. Bloqueio automático exige Cloud Function que desative o faturamento, o que é mais complexo do que o site justifica hoje.
 - A chave da service account é credencial de longa duração. Alternativa sem chave guardada: Workload Identity Federation, mais trabalhosa de configurar.
@@ -334,7 +334,7 @@ Riscos e consequências:
 
 | Ordem | Item | Tipo | Observação |
 |---|---|---|---|
-| 1 | 7 — papéis e 2FA | Verificação manual no console | Sem código. Pessoas (Johann e Paul), plano (Spark) e papel do Paul (Owner) já informados; Storage, Authentication e App Check confirmados desligados; faltam o papel do Johann e o 2FA. |
+| 1 | 7 — 2FA do Paul (papel do Johann: Editor, baixa prioridade) | Verificação manual no console | Sem código. Johann: Editor com 2FA ativo (declarado). Paul: Owner de tudo; falta confirmar o 2FA dele. Plano Spark e serviços desligados já confirmados. |
 | 2 | 4 — GitHub Pages | Decisão + passos do Paul | PR #1 aberto; o merge em `main` só depois de o Paul desabilitar o Pages e criar o secret. |
 | 3 | 3 — dependências (+ imagens, JSON-LD, canonical, workflow) | Change (`CHG0003`) | **Concluída com ressalvas** em 2026-10-27; publicada no Firebase. PR #1 aberto, merge pendente do item 4 (Paul). |
 | 3b | 1 + 2 — cabeçalhos e cache | Change (`CHG0004`) | CSP em report-only primeiro. Considerar `no-cache` no HTML antes ou junto da CHG0003 (risco de tela em branco por cache, ver a página da CHG0003). |
