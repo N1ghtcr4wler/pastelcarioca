@@ -5,7 +5,7 @@ const WA_MAIN = "https://wa.me/573244524438?text=Hola%20Pastel%20Carioca%2C%20qu
 const Hero = () => {
   return <section aria-label="Hero" className="relative overflow-hidden">
       <div className="relative">
-        <img src={getPublicAssetPath("/lovable-uploads/9d24aac6-1463-401e-8ee8-9b18d458ebce.png")} alt="Coxinhas doradas y crujientes sobre pizarra, apetitosas" className="absolute inset-0 size-full object-cover" loading="eager" decoding="async" />
+        <img src={getPublicAssetPath("/lovable-uploads/9d24aac6-1463-401e-8ee8-9b18d458ebce.webp")} alt="Coxinhas doradas y crujientes sobre pizarra, apetitosas" className="absolute inset-0 size-full object-cover" loading="eager" decoding="async" />
         <div className="relative hero-scrim-16">
           <div className="container min-h-[72vh] md:min-h-[80vh] flex items-center">
             <div className="max-w-2xl py-24">

@@ -30,7 +30,7 @@ const Blog = () => {
           </header>
 
           <img
-            src="/lovable-uploads/9d24aac6-1463-401e-8ee8-9b18d458ebce.png"
+            src="/lovable-uploads/9d24aac6-1463-401e-8ee8-9b18d458ebce.webp"
             alt="Coxinhas brasileñas doradas y crujientes listas para servir"
             className="w-full h-96 object-cover rounded-lg mb-8"
           />

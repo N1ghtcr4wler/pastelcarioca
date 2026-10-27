@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import deliveryImage from "@/assets/delivery-coxinhas.png";
+import deliveryImage from "@/assets/delivery-coxinhas.webp";
 import OrderForm from "./OrderForm";
 
 const WA_MAIN = "https://wa.me/573244524438?text=Hola%20Pastel%20Carioca%2C%20quiero%20pedir%20coxinha%20brasile%C3%B1a%20a%20domicilio%20en%20Bogot%C3%A1";
