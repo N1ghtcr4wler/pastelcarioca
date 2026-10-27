@@ -29,6 +29,8 @@ O que está bem e não precisa de ação:
 - HSTS forte (`max-age=31556926; includeSubDomains; preload`) e redirecionamento `301` de HTTP para HTTPS, ambos padrão da plataforma e confirmados nos cabeçalhos reais.
 - `.firebase/` (cache de deploy) e `changes/` (backups e logs de change) ignorados pelo git. `.firebaserc` só contém o ID do projeto, que é público.
 
+Estado em 2026-10-27, depois da CHG0003: site publicado no Firebase a partir do branch `release/change0003` (PR #1 aberto para `main`, não mergeado); item 3 resolvido; itens 1, 2, 4 (parte do Paul), 5, 6, 7 e 8 abertos. O `README.md` foi reescrito com as instruções do projeto no estado atual.
+
 Os itens abaixo estão em ordem de prioridade.
 
 ---
@@ -79,6 +81,7 @@ Cabeçalho real: `Cache-Control: max-age=3600` tanto no `index.html` quanto em `
 
 - O `index.html` muda a cada deploy e é o que aponta para os assets novos. Com 1 hora de cache, uma correção (inclusive de segurança) demora até 1 hora para chegar a quem já visitou. Observado na prática na CHG0002: navegador com cache continuou mostrando o bundle antigo depois do deploy.
 - Os assets têm hash no nome e nunca mudam de conteúdo; 1 hora de cache para eles é curto demais, gerando recarga desnecessária.
+- **Efeito colateral de um deploy com cache de 1 h (observado na CHG0003):** depois do deploy, o arquivo do bundle antigo (`/assets/index-C814rLGz.js`) passou a devolver HTTP 200 com `text/html` (o rewrite SPA responde `index.html` para qualquer caminho inexistente). Um visitante com o HTML antigo em cache **e** o JS antigo fora do cache receberia HTML no lugar do JavaScript e veria tela em branco até recarregar ou o cache expirar (até 1 h). No único teste feito (navegador com HTML e JS antigos em cache) a página renderizou normalmente; é um caso só, em um navegador só, então o risco não está descartado.
 
 Severidade: baixa como segurança, média como operação (atraso de hotfix).
 
@@ -143,7 +146,7 @@ Riscos e consequências:
 
 Verificado em 2026-10-27 pela API do GitHub com a conta `johnrj`: o Pages **está habilitado**, com source "branch `main`, pasta `/`". O workflow antigo usava `actions/deploy-pages`, que exige source "GitHub Actions"; essa divergência não foi investigada, então **não se sabe o que o `github.io` serve hoje** (pode ser a versão publicada pelo workflow, pode ser a raiz do repositório sem build).
 
-Estado do código local (não commitado): `.github/workflows/static.yml` foi substituído por `.github/workflows/firebase-hosting.yml`, que a cada push em `main` roda `npm ci`, `npm run build` e publica no canal `live` do Firebase Hosting (Node 20). Esse workflow precisa do secret `FIREBASE_SERVICE_ACCOUNT_PASTEL_CARIOCA_SITE` no repositório; sem ele o job de deploy falha. A lógica de `github.io` em `vite.config.ts` e `App.tsx` foi mantida.
+Estado do código: `.github/workflows/static.yml` foi substituído por `.github/workflows/firebase-hosting.yml`, que a cada push em `main` roda `npm ci`, `npm run build` e publica no canal `live` do Firebase Hosting (Node 20). A troca está no branch `release/change0003`, **PR #1** (https://github.com/N1ghtcr4wler/pastelcarioca/pull/1), aberto e **não mergeado**; a descrição do PR lista os passos que o Paul precisa fazer antes do merge. O `main` do GitHub ainda tem o `static.yml` antigo. Esse workflow precisa do secret `FIREBASE_SERVICE_ACCOUNT_PASTEL_CARIOCA_SITE` no repositório; sem ele o job de deploy falha. A lógica de `github.io` em `vite.config.ts` e `App.tsx` foi mantida.
 
 ### Problema
 
@@ -211,6 +214,7 @@ O repositório é `N1ghtcr4wler/pastelcarioca`, em conta **pessoal** (não organ
 - Script de terceiro com acesso total à página. Risco aceito por praticamente todo site comercial; o que o item 1 faz é limitar o que mais pode ser carregado.
 - O site já existia no Lovable antes da migração, então o ID provavelmente é uma propriedade que o Paul (ou quem montou o site) criou, e não um ID de template. Isso é inferência, não confirmação: o Paul confirma no painel do GA.
 - O inline dificulta a CSP (item 1).
+- Observado em produção (CHG0003): o `gtag.js` carrega e as requisições de coleta para `G-M3E4X6K6MK` saem. Isso confirma que o GA funciona no site publicado, mas não de quem é a propriedade.
 
 Severidade: baixa.
 
@@ -300,6 +304,7 @@ O site original está na hospedagem do Lovable; o Firebase Hosting (Spark) é o 
 
 ### Problema
 
+- **Possível terceira hospedagem (Cloudflare Pages), descoberta em 2026-10-27 pelos checks do PR #1:** o repositório está conectado a dois projetos do Cloudflare Pages, `pastelcarioca` (check passou) e `pastelcariocacol` (check **falhou**; motivo não investigado). Não se sabe se esses projetos publicam o site em `*.pages.dev` ou em domínio próprio, nem quem os criou ou os mantém (não é verificável pelo código; o Paul sabe). Se publicam, são mais cópias públicas fora do controle de change, e o check vermelho vai aparecer em todo PR.
 - **Duas cópias públicas ao mesmo tempo** (Lovable e Firebase): conteúdo duplicado para o Google, métricas do GA misturadas (o mesmo ID `G-M3E4X6K6MK` recebe visitas dos dois) e correções que precisam ser aplicadas nos dois lugares.
 - **`canonical` apontando para o `web.app`** enquanto o Lovable é o original (item 3): pode deslocar a indexação para a cópia nova antes da hora, ou para o domínio errado depois da virada.
 - **Cabeçalhos de segurança (item 1) só existem no Firebase**; a cópia do Lovable continua sem eles (não verificado o que o Lovable permite configurar).
@@ -310,6 +315,7 @@ Severidade: média; é risco de SEO e de disponibilidade durante a virada, não 
 
 ### Solução proposta
 
+0. O Paul informa o que são os projetos `pastelcarioca` e `pastelcariocacol` no Cloudflare Pages (URLs, domínio, se estão em uso) e por que o segundo falha. Decidir se continuam, são desligados ou o repositório é desconectado deles.
 1. O Paul informa a URL atual do site no Lovable, o domínio (se houver), onde o DNS é gerenciado e se existe tráfego pago ou links fixos apontando para o endereço antigo.
 2. Definir a data da virada e o que fica de pé depois dela: redirecionamento 301 da URL antiga para a nova, ou desligamento do projeto no Lovable. Decisão do Paul.
 3. Antes da virada, o `canonical` do repositório não deve apontar para o `web.app` se o Lovable continuar publicando a partir dele; deve apontar para o endereço definitivo. Se o domínio definitivo ainda não existe, avaliar manter a pendência registrada em vez de fixar um canônico que depois estará errado.
@@ -329,11 +335,11 @@ Riscos e consequências:
 | Ordem | Item | Tipo | Observação |
 |---|---|---|---|
 | 1 | 7 — papéis e 2FA | Verificação manual no console | Sem código. Pessoas (Johann e Paul), plano (Spark) e papel do Paul (Owner) já informados; Storage, Authentication e App Check confirmados desligados; faltam o papel do Johann e o 2FA. |
-| 2 | 4 — GitHub Pages | Decisão + commit | Antes de qualquer push para `main`. |
+| 2 | 4 — GitHub Pages | Decisão + passos do Paul | PR #1 aberto; o merge em `main` só depois de o Paul desabilitar o Pages e criar o secret. |
 | 3 | 3 — dependências (+ imagens, JSON-LD, canonical, workflow) | Change (`CHG0003`) | **Concluída com ressalvas** em 2026-10-27; publicada no Firebase. PR #1 aberto, merge pendente do item 4 (Paul). |
 | 3b | 1 + 2 — cabeçalhos e cache | Change (`CHG0004`) | CSP em report-only primeiro. Considerar `no-cache` no HTML antes ou junto da CHG0003 (risco de tela em branco por cache, ver a página da CHG0003). |
 | 4 | 5 — GA | Verificação no painel + ajuste no `index.html` | Pode entrar na CHG0003 se o ID for confirmado antes. |
-| 5 | 8 — migração (virada) | Decisão do Paul + change (DNS) | Depende de informações do Paul (URL antiga, domínio, DNS). Define o `canonical` final. |
+| 5 | 8 — migração (virada) e Cloudflare Pages | Decisão do Paul + change (DNS) | Depende de informações do Paul (URL antiga, domínio, DNS, projetos do Cloudflare Pages). Define o `canonical` final. |
 | 6 | 6 — privacidade | Texto + eventual rota | Depende de avaliação legal. |
 | 7 | 1 (fase 2) — CSP em bloqueio | Change (`CHG0005`) | Só depois de alguns dias sem relatórios de violação. |
 
