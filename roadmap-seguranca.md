@@ -97,7 +97,7 @@ Riscos e consequências:
 
 ---
 
-## 3. Dependências com advisories — **resolvido localmente em 2026-10-27 (pendente de deploy)**
+## 3. Dependências com advisories — **resolvido e publicado em 2026-10-27 (CHG0003)**
 
 ### Contexto
 
@@ -130,7 +130,8 @@ Riscos e consequências:
 
 - Vite 8 usa Rolldown no lugar do Rollup/esbuild no build: o bundle gerado muda (tamanho e nomes de arquivo). Não comparei o comportamento em Firefox e Safari, só no Chrome.
 - O `overrides` do typography é uma amarra manual: se o pacote for atualizado e deixar de fixar a versão, o override pode ser removido.
-- Nada disso está publicado. Vai no deploy da CHG0003.
+- **Publicado em produção** em 2026-10-27 12:41 BRT (CHG0003, commit `621fc2a`). Verificado no site publicado: 0 erros e 0 warnings no console, formulário, rotas, redirect e GA funcionando; bundle novo `index-DlhW39xM.js`. O código está no branch `release/change0003` (PR #1); **o `main` do GitHub ainda não tem essas mudanças** até o merge, que depende dos passos do Paul no item 4.
+- Firefox e Safari continuam sem teste.
 
 ---
 
@@ -329,7 +330,7 @@ Riscos e consequências:
 |---|---|---|---|
 | 1 | 7 — papéis e 2FA | Verificação manual no console | Sem código. Pessoas (Johann e Paul), plano (Spark) e papel do Paul (Owner) já informados; Storage, Authentication e App Check confirmados desligados; faltam o papel do Johann e o 2FA. |
 | 2 | 4 — GitHub Pages | Decisão + commit | Antes de qualquer push para `main`. |
-| 3 | 3 — dependências (+ imagens, JSON-LD, canonical, workflow) | Change (`CHG0003`, registrada, aguardando ok) | Pronta no código local; sem push. |
+| 3 | 3 — dependências (+ imagens, JSON-LD, canonical, workflow) | Change (`CHG0003`) | **Concluída com ressalvas** em 2026-10-27; publicada no Firebase. PR #1 aberto, merge pendente do item 4 (Paul). |
 | 3b | 1 + 2 — cabeçalhos e cache | Change (`CHG0004`) | CSP em report-only primeiro. Considerar `no-cache` no HTML antes ou junto da CHG0003 (risco de tela em branco por cache, ver a página da CHG0003). |
 | 4 | 5 — GA | Verificação no painel + ajuste no `index.html` | Pode entrar na CHG0003 se o ID for confirmado antes. |
 | 5 | 8 — migração (virada) | Decisão do Paul + change (DNS) | Depende de informações do Paul (URL antiga, domínio, DNS). Define o `canonical` final. |
