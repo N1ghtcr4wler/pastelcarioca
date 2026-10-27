@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Backups, prints e logs das changes (ai-memory)
+changes/
+.firebase/

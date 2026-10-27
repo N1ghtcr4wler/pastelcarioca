@@ -8,7 +8,7 @@ const Header = () => {
         <div className="flex items-start gap-3 pt-2">
           <Link to="/" className="inline-flex items-start" aria-label="Pastel Carioca inicio">
             <img
-              src={getPublicAssetPath("/lovable-uploads/logo-carioca.png")}
+              src={getPublicAssetPath("/lovable-uploads/logo-carioca.webp")}
               alt="Pastel Carioca logo"
               className="block h-20 w-auto md:h-24 object-contain object-top"
               loading="eager"

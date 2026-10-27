@@ -1,10 +1,10 @@
 
 
-import coxinhas from "@/assets/destaque-coxinhas.png";
+import coxinhas from "@/assets/destaque-coxinhas.webp";
 import bolinha from "@/assets/destaque-bolinha.jpg";
-import risole from "@/assets/destaque-risole.png";
-import croquetas from "@/assets/destaque-croquetas.jpg";
-import salchicha from "@/assets/destaque-salchicha.png";
+import risole from "@/assets/destaque-risole.webp";
+import croquetas from "@/assets/destaque-croquetas.webp";
+import salchicha from "@/assets/destaque-salchicha.webp";
 
 const items = [{
   img: coxinhas,
